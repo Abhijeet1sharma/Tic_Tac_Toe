@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220604201624_game-migration.cs" />
+    <Compile Remove="Migrations\20220604201624_game-migration.Designer.cs" />
+    <Compile Remove="Migrations\20220608183256_Game.cs" />
+    <Compile Remove="Migrations\20220608183256_Game.Designer.cs" />
+    <Compile Remove="Migrations\20220609161642_gamemigration.cs" />
+    <Compile Remove="Migrations\20220609161642_gamemigration.Designer.cs" />
+    <Compile Remove="Migrations\20220609162258_Gamemigration.cs" />
+    <Compile Remove="Migrations\20220609162258_Gamemigration.Designer.cs" />
+    <Compile Remove="Migrations\20220609162747_Gamemigration.cs" />
+    <Compile Remove="Migrations\20220609162747_Gamemigration.Designer.cs" />
+    <Compile Remove="Migrations\20220609163156_Gamemigration.cs" />
+    <Compile Remove="Migrations\20220609163156_Gamemigration.Designer.cs" />
+    <Compile Remove="Migrations\20220611114152_Game.cs" />
+    <Compile Remove="Migrations\20220611114152_Game.Designer.cs" />
+    <Compile Remove="Migrations\20220611114713_Game.cs" />
+    <Compile Remove="Migrations\20220611114713_Game.Designer.cs" />
+    <Compile Remove="Migrations\20220611120134_Game.cs" />
+    <Compile Remove="Migrations\20220611120134_Game.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+</Project>
